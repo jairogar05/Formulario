@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ES-es">
+
+<head>
+    <title>Formulario</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="logo.png" rel="icon">
+</head>
+
+<body>
+    <h1>Formulario puesto de trabajo:</h1>
+    <form action="procesar-datos.php" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <br>
+            <label>Nombre: <input type="text" name="usuario"></label>
+            <br><br>
+            <label>Escoja su continente de procedencia:</label><select name="lista_seleccion">
+
+                <option value="opcion1">Europa</option>
+                <option value="option2">América</option>
+                <option value="option3">África</option>
+                <option value="option4">Oceanía</option>
+                <option value="option5">Antártida</option>
+                <option value="option6">Asia</option>
+            </select></label>
+            <br><br>
+            <label>Comunidad Autónoma en la que vive:<input type="text" name="usuario"></label>
+            <br><br>
+            <label>Provincia en la que vive: <input type="text" name="usuario"></label>
+            <br><br>
+            <label>Municipio/Ciudad en el que vive: <input type="text" name="usuario"></label>
+            <br><br>
+            <label>Dirección: <input type="text" name="Direccion"></label>
+            <label>Código postal: <input type="text" name="Codigopostal"></label>
+            <label>DNI: <input type="text" name="DNI"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Información de puesto de trabajo:</legend>
+            <label>A qué plaza dentro de la empresa quieres entrar:
+                <select name="lista_de_seleccion">
+                    <option value="opcion1">Secretaría</option>
+                    <option value="opcion2">Relaciones con otras empresas</option>
+                    <option value="opcion3">Diseño y desarrollo del productoS</option>
+                </select></label>
+            <br>
+            <label>Observaciones:<br><textarea name="area_texto" rows="3"
+                    cols="50">¿Por qué es una buena opción para ocupar el puesto?</textarea></label> </fieldset>
+            <fieldset>
+                <legend>Finalizar el formulario:</legend>
+                <button type="reset">Resetear</button>
+                <button type="submit">Enviar</button>
+            </fieldset>>
+    </form>
+
+</body>
+
+</html>
